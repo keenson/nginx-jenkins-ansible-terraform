@@ -11,7 +11,7 @@ resource "aws_instance" "site" {
   ami                    = "ami-09e67e426f25ce0d7"
   instance_type          = "t2.micro"
   key_name               = "devops"
-  vpc_security_group_ids = ["sg-062d14ec386b964ae", "sg-0661d0e80482dcd78"]
+  vpc_security_group_ids = ["sg-0994b80e04f588299","sg-06ba7646d94d35d65"]
   tags = {
     Name  = var.name
     group = var.group
